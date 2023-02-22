@@ -10,8 +10,8 @@ namespace NetCoreEFProcedures.Repositories
 {
     public class RepositoryDoctores
     {
-        private EnfermosContext context;
-        public RepositoryDoctores(EnfermosContext context)
+        private HospitalContext context;
+        public RepositoryDoctores(HospitalContext context)
 
         {
             this.context = context;
