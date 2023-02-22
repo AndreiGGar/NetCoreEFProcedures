@@ -9,6 +9,7 @@ string connectionString = builder.Configuration.GetConnectionString("SqlHospital
 builder.Services.AddTransient<RepositoryEnfermos>();
 builder.Services.AddTransient<RepositoryDoctores>();
 builder.Services.AddTransient<RepositoryVistaEmpleados>();
+builder.Services.AddTransient<RepositoryTrabajadores>();
 builder.Services.AddDbContext<HospitalContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddControllersWithViews();
 
